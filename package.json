@@ -1,6 +1,6 @@
 {
   "name": "homebridge-canary",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Homebridge plugin for Canary",
   "license": "ISC",
   "keywords": [
@@ -8,10 +8,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/csstaub/homebridge-canary.git"
+    "url": "git://github.com/reinierlakhan/homebridge-canary.git"
   },
   "bugs": {
-    "url": "http://github.com/csstaub/homebridge-canary/issues"
+    "url": "http://github.com/reinierlakhan/homebridge-canary/issues"
   },
   "engines": {
     "node": ">=0.12.0",
