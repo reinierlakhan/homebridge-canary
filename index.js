@@ -37,17 +37,7 @@ Canary.prototype.getStateAirQuality = function (callback) {
       return
     }
     let quality
-    if (val <= 0.3) {
-      quality = 1
-    } else if (val <= 0.4) {
-      quality = 2
-    } else if (val <= 0.5) {
-      quality = 3
-    } else if (val <= 0.6) {
-      quality = 4
-    } else {
-      quality = 5
-    }
+    quality = Math.round((1 - val) * 4) + 1
     callback(null, quality)
   })
 }
