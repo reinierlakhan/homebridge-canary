@@ -54,7 +54,7 @@
                 "required": true,
                 "default": "AllInOne",
                 "minLength": 1,
-                "description": "The Model you want to show in the Home App."
+                "description": "Should be AllInOne or Flex, if you specify Flex, it will give you the Flex Battery level. Also The Model will show in the Home App."
             }
         }
     }
