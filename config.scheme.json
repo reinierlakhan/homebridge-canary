@@ -1,0 +1,61 @@
+{
+    "pluginAlias": "Canary",
+    "pluginType": "accessory",
+    "schema": {
+        "type": "object",
+        "properties": {
+            "name": {
+                "title": "Name",
+                "type": "string",
+                "required": true,
+                "default": "Canary",
+                "description": "The name that will appear in your homebridge log."
+            },
+            "accessory": {
+                "title": "Accessory",
+                "type": "string",
+                "default": "Canary",
+                "required": true,
+                "description": "This must be Canary."
+            },
+            "username": {
+                "title": "Username",
+                "type": "string",
+                "placeholder": "<username>",
+                "required": true,
+                "description": "Your Canary username."
+            },
+            "password": {
+                "title": "Password",
+                "type": "string",
+                "placeholder": "<password>",
+                "required": true,
+                "description": "Your Canary password."
+            },
+            "pollingInterval": {
+                "title": "Polling Interval",
+                "type": "number",
+                "required": true,
+                "placeholder": 300,
+                "minLength": 1,
+                "description": "Default polling interval to Canary."
+            },
+            "serial": {
+                "title": "Serial",
+                "type": "string",
+                "required": true,
+                "placeholder": "<serial>",
+                "minLength": 1,
+                "description": "The Serial you want to show in the Home App."
+            },
+            "model": {
+                "title": "Model",
+                "type": "string",
+                "required": true,
+                "default": "AllInOne",
+                "minLength": 1,
+                "description": "Should be AllInOne or Flex. If you specify Flex, it will give you the Flex Battery level. Also The Model will show in the Home App."
+            }
+        }
+    }
+}
