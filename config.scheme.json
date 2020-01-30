@@ -52,7 +52,7 @@
                 "title": "Model",
                 "type": "string",
                 "required": true,
-                "default": "AllInOne|Flex",
+                "default": "AllInOne",
                 "minLength": 1,
                 "description": "The Model you want to show in the Home App."
             }
