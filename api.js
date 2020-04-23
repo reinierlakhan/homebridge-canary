@@ -69,7 +69,7 @@ Api.prototype.sessionToken = async function () {
     }
   })
 
-  let token = response.body['access_token']
+  let token = response.body['token']
   if (!token) {
     return Promise.reject(new Error('Unable to log in, no session token found?'))
   }
