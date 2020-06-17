@@ -67,7 +67,7 @@ Canary.prototype.readSensor = async function (sensor) {
 Canary.prototype.deviceId = async function () {
   let devices = await this.backend.devices()
   for (var i in devices) {
-    if (devices[i].serial_number === this.serial) {
+    if ((devices[i].serial_number === this.serial) && (devices[i].activation_status === "activated")) {
       return Promise.resolve(devices[i].id)
     }
   }
